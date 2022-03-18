@@ -20,7 +20,6 @@ def palindrome?(string)
 end
 
 palindrome?("ovo")
-
 ###############################
 def bottles(n)
   if n == 0
@@ -40,10 +39,11 @@ def fibonacci(n)
     fibonacci(n-1) + fibonacci(n-2)
   end
 end
+
+fibonacci(10)
 ###############################
 def my_flatten(array)
   new_array = []
-
   array.each do |element|
     if element.kind_of?(Array)
       my_flatten(element)
