@@ -1,9 +1,5 @@
 def fibonacci(n)
-  if n < 2
-    n
-  else
-    fibonacci(n - 1) + fibonacci(n - 2)
-  end
+  n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2)
 end
 
 fibonacci(4)
